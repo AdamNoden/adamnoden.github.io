@@ -1,21 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter } from "react-router-dom";
+import { Navigation, PageSwitch } from "./components";
 
 const Root = styled.div`
-  font-family: Georgia, "Times New Roman", Times, serif;
-`;
-
-const Temp = styled.h1`
-  text-align: center;
-  margin-top: 30%;
-  font-weight: 100;
+  padding: 20px;
 `;
 
 const App: React.FC = () => {
   return (
-    <Root>
-      <Temp>Under construction</Temp>
-    </Root>
+    <BrowserRouter>
+      <Root>
+        <Navigation />
+        <PageSwitch />
+      </Root>
+    </BrowserRouter>
   );
 };
 
