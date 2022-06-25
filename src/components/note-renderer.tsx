@@ -7,20 +7,20 @@ const Root = styled.div``;
 interface Props {
   rawMarkdown: string;
 }
-export const PostRenderer: React.FC<Props> = ({ rawMarkdown }) => {
-  const [postMarkdown, setPostMarkdown] = useState("");
+export const NoteRenderer: React.FC<Props> = ({ rawMarkdown }) => {
+  const [noteMarkdown, setNoteMarkdown] = useState("");
 
   useEffect(() => {
     fetch(rawMarkdown)
       .then((response) => response.text())
       .then((text) => {
-        setPostMarkdown(text);
+        setNoteMarkdown(text);
       });
   }, []);
 
   return (
     <Root>
-      <Markdown>{postMarkdown}</Markdown>
+      <Markdown>{noteMarkdown}</Markdown>
     </Root>
   );
 };

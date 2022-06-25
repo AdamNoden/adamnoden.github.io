@@ -14,10 +14,29 @@ const ListItem = styled.li`
   margin-bottom: 7px;
 `;
 
+const navItems = [
+  {
+    name: "Home",
+    path: "/",
+    active: true,
+  },
+  {
+    name: "Notes",
+    path: "/notes",
+    active: false,
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+    active: true,
+  },
+];
+
 interface NavLinkContentProps {
   isActive: boolean;
   to: string;
 }
+
 const NavLinkContent: React.FC<NavLinkContentProps> = ({ isActive, to }) => (
   <span>
     {to}
@@ -26,28 +45,20 @@ const NavLinkContent: React.FC<NavLinkContentProps> = ({ isActive, to }) => (
 );
 
 export const Navigation: React.FC = () => {
+  const activeNavItems = navItems.filter((item) => item.active);
+
   return (
     <Root>
       <List>
-        <ListItem>
-          <NavLink to="/">
-            {({ isActive }) => <NavLinkContent isActive={isActive} to="Home" />}
-          </NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink to="/posts">
-            {({ isActive }) => (
-              <NavLinkContent isActive={isActive} to="Posts" />
-            )}
-          </NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink to="/contact">
-            {({ isActive }) => (
-              <NavLinkContent isActive={isActive} to="Contact" />
-            )}
-          </NavLink>
-        </ListItem>
+        {activeNavItems.map(({ name, path }) => (
+          <ListItem key={path}>
+            <NavLink to={path}>
+              {({ isActive }) => (
+                <NavLinkContent isActive={isActive} to={name} />
+              )}
+            </NavLink>
+          </ListItem>
+        ))}
       </List>
     </Root>
   );

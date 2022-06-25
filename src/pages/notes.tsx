@@ -2,24 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import { postRegistry } from "../posts";
+import { registry } from "../notes";
 
 const Root = styled.div``;
 
-export const Posts: React.FC = () => {
-  const postLinks = postRegistry.map(({ title, tags, path }) => {
+export const Notes: React.FC = () => {
+  const notelinks = registry.map(({ title, tags, path }) => {
     const tagDisplay = tags.length > 0 ? `Tags: [${tags.join(", ")}]` : "";
     return (
       <li key={path}>
-        <Link to={`/posts/${path}`}>{title}</Link> &nbsp;- {tagDisplay}
+        <Link to={`/notes/${path}`}>{title}</Link> &nbsp;- {tagDisplay}
       </li>
     );
   });
 
   return (
     <Root>
-      <h2>Posts</h2>
-      <ul>{postLinks}</ul>
+      <h2>Notes</h2>
+      <ul>{notelinks}</ul>
     </Root>
   );
 };

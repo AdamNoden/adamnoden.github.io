@@ -1,13 +1,13 @@
 import helloWorld from "./hello-world.md";
 
-interface Post {
+interface Note {
   title: string;
   tags: string[];
   path: string;
   markdown: string;
 }
 
-export const postRegistry: Post[] = [
+export const registry: Note[] = [
   {
     title: "Hello World",
     tags: ["test", "foo", "bar"],
