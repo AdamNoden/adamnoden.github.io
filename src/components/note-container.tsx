@@ -9,10 +9,15 @@ const Root = styled.div``;
 export const NoteContainer: React.FC = () => {
   const params = useParams();
   const path = params.notePath || "no-path";
-  const noteData = registry.find((item) => item.path === path);
+  const listedNotes = registry.filter((note) => note.listed);
+  const noteData = listedNotes.find((item) => item.path === path);
 
   if (!noteData) {
-    return <div>No notes at this path</div>;
+    return (
+      <div>
+        No notes at this path. If there was one here it may have been removed
+      </div>
+    );
   }
   return (
     <Root>

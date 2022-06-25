@@ -5,6 +5,7 @@ interface Note {
   tags: string[];
   path: string;
   markdown: string;
+  listed: boolean;
 }
 
 export const registry: Note[] = [
@@ -13,5 +14,13 @@ export const registry: Note[] = [
     tags: ["test", "foo", "bar"],
     path: "hello-world",
     markdown: helloWorld,
+    listed: true,
+  },
+  {
+    title: "Hello World - unlisted",
+    tags: ["test", "foo", "bar"],
+    path: "hello-world-unlisted",
+    markdown: helloWorld,
+    listed: false,
   },
 ];
