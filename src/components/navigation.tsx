@@ -35,6 +35,13 @@ export const Navigation: React.FC = () => {
           </NavLink>
         </ListItem>
         <ListItem>
+          <NavLink to="/posts">
+            {({ isActive }) => (
+              <NavLinkContent isActive={isActive} to="Posts" />
+            )}
+          </NavLink>
+        </ListItem>
+        <ListItem>
           <NavLink to="/contact">
             {({ isActive }) => (
               <NavLinkContent isActive={isActive} to="Contact" />
