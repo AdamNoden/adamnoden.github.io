@@ -2,7 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Root = styled.nav``;
+const Root = styled.nav`
+  margin-bottom: 70px;
+`;
 
 const List = styled.ul`
   list-style-type: none;

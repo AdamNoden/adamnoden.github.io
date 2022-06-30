@@ -1,4 +1,5 @@
 import helloWorld from "./hello-world.md";
+import bioenergeticHealth from "./bioenergetic-health.md";
 
 interface Note {
   title: string;
@@ -6,6 +7,7 @@ interface Note {
   path: string;
   markdown: string;
   listed: boolean;
+  showFilter: boolean;
 }
 
 export const registry: Note[] = [
@@ -14,13 +16,22 @@ export const registry: Note[] = [
     tags: ["test", "foo", "bar"],
     path: "hello-world",
     markdown: helloWorld,
-    listed: true,
+    listed: false,
+    showFilter: false,
   },
   {
-    title: "Hello World - unlisted",
-    tags: ["test", "foo", "bar"],
-    path: "hello-world-unlisted",
-    markdown: helloWorld,
-    listed: false,
+    title: "Bioenergetic Health Model",
+    tags: [
+      "health",
+      "metabolism",
+      "ray peat",
+      "bioenergetic",
+      "thyroid",
+      "stress",
+    ],
+    path: "bioenergetic-health",
+    markdown: bioenergeticHealth,
+    listed: true,
+    showFilter: true,
   },
 ];

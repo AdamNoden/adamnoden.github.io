@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { registry } from "../notes";
@@ -12,6 +12,11 @@ export const NoteContainer: React.FC = () => {
   const listedNotes = registry.filter((note) => note.listed);
   const noteData = listedNotes.find((item) => item.path === path);
 
+  useEffect(() => {
+    if (noteData) {
+      document.title = noteData.title;
+    }
+  }, [noteData]);
   if (!noteData) {
     return (
       <div>
@@ -21,7 +26,10 @@ export const NoteContainer: React.FC = () => {
   }
   return (
     <Root>
-      <NoteRenderer rawMarkdown={noteData.markdown} />
+      <NoteRenderer
+        rawMarkdown={noteData.markdown}
+        showFilter={noteData.showFilter}
+      />
     </Root>
   );
 };
