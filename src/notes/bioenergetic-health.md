@@ -1,10 +1,16 @@
 # Bioenergetic Health Model
 
-Misc notes from reading articles/books/podcasts mostly by Ray Peat on a "bioenergetic" health model. I do not endorse or necessarily follow any of this, it's just scattered notes - organized for my benefit only.
+**DISCLAIMER: Not intended for an external audience. I do not endorse or necessarily follow any of this, it's just scattered notes - organized for my benefit only. Turn back now.**
+
+---
+
+Misc notes from reading articles/books/podcasts mostly by Ray Peat on a "bioenergetic" health model.
 
 > _The organizing power of energy flow is hypothesized to be the origin of biological complexity and its decline the basis of diseases and aging._
 >
 > ― Douglas C. Wallace: [A mitochondrial bioenergetic etiology of disease](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614529/)
+
+---
 
 ### Core principles
 
@@ -15,7 +21,16 @@ Misc notes from reading articles/books/podcasts mostly by Ray Peat on a "bioener
 - A poor metabolism impairs a normal defensive response to stress
 - Stress can be from external events but also an internal 'stress response' can result from internal biology
 
-## Collated notes
+### Hormones cheat-sheet
+
+- Serotonin bad
+- Estrogen always bad
+- Cortisol bad
+- Dopamine good
+- Androgens good
+- D3 good
+- Pregnenolone good
+- Progesterone very god
 
 ### Stress/Lactic acid
 
