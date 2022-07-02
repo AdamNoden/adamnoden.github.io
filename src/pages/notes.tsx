@@ -59,11 +59,12 @@ export const Notes: React.FC = () => {
       return textA < textB ? -1 : textA > textB ? 1 : 0;
     });
 
-    const notelinks = sortedList.map(({ title, tags, path }) => {
-      const tagDisplay = tags.length > 0 ? `Tags: [${tags.join(", ")}]` : "";
+    const notelinks = sortedList.map(({ title, path }) => {
+      // const tagDisplay = tags.length > 0 ? `Tags: [${tags.join(", ")}]` : "";
       return (
         <NoteListItem key={path}>
-          <Link to={`/notes/${path}`}>{title}</Link> &nbsp;- {tagDisplay}
+          {/* <Link to={`/notes/${path}`}>{title}</Link> &nbsp;- {tagDisplay} */}
+          <Link to={`/notes/${path}`}>{title}</Link>
         </NoteListItem>
       );
     });

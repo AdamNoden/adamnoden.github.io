@@ -1,5 +1,6 @@
 import helloWorld from "./hello-world.md";
 import bioenergeticHealth from "./bioenergetic-health.md";
+import metaboolismKateDeering from "./metabolism-kate-deering.md";
 
 interface Note {
   title: string;
@@ -21,16 +22,17 @@ export const registry: Note[] = [
   },
   {
     title: "Bioenergetic Health Model",
-    tags: [
-      "health",
-      "metabolism",
-      "ray peat",
-      "bioenergetic",
-      "thyroid",
-      "stress",
-    ],
+    tags: ["metabolism", "ray peat", "bioenergetic", "thyroid", "stress"],
     path: "bioenergetic-health",
     markdown: bioenergeticHealth,
+    listed: true,
+    showFilter: true,
+  },
+  {
+    title: "Kate Deering on Metabolism",
+    tags: ["metabolism", "kate deering", "bioenergetic"],
+    path: "metabolism-kate-deering",
+    markdown: metaboolismKateDeering,
     listed: true,
     showFilter: true,
   },

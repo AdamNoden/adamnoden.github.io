@@ -1,9 +1,5 @@
 # Bioenergetic Health Model
 
-**DISCLAIMER: Not intended for an external audience. I do not endorse or necessarily follow any of this, it's just scattered notes - organized for my benefit only. Turn back now.**
-
----
-
 Misc notes from reading articles/books/podcasts mostly by Ray Peat on a "bioenergetic" health model.
 
 > _The organizing power of energy flow is hypothesized to be the origin of biological complexity and its decline the basis of diseases and aging._
