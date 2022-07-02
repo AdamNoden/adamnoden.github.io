@@ -18,7 +18,13 @@ const Filter = styled.input`
   margin-left: 20px;
 `;
 
-const HeaderPanel = styled.div``;
+const HeaderPanel = styled.div`
+  @media print {
+    * {
+      display: none;
+    }
+  }
+`;
 
 interface Props {
   rawMarkdown: string;
