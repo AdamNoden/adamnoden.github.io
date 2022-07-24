@@ -1,6 +1,7 @@
 import helloWorld from "./hello-world.md";
 import bioenergeticHealth from "./bioenergetic-health.md";
 import metaboolismKateDeering from "./metabolism-kate-deering.md";
+import cryptoCurrentNickLand from "./crypto-current-nick-land.md";
 
 interface Note {
   title: string;
@@ -33,6 +34,14 @@ export const registry: Note[] = [
     tags: ["metabolism", "kate deering", "bioenergetic"],
     path: "metabolism-kate-deering",
     markdown: metaboolismKateDeering,
+    listed: true,
+    showFilter: true,
+  },
+  {
+    title: "Highlights from Nick Land's Crypto Current",
+    tags: ["nick land", "bitcoin", "crypto"],
+    path: "crypto-current-nick-land",
+    markdown: cryptoCurrentNickLand,
     listed: true,
     showFilter: true,
   },
