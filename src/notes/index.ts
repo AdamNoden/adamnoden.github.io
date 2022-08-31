@@ -1,7 +1,7 @@
-import helloWorld from "./hello-world.md";
-import bioenergeticHealth from "./bioenergetic-health.md";
-import metaboolismKateDeering from "./metabolism-kate-deering.md";
-import cryptoCurrentNickLand from "./crypto-current-nick-land.md";
+import helloWorld from "./2-recipes/hello-world.md";
+import bioenergeticHealth from "./1-misc/bioenergetic-health.md";
+import metaboolismKateDeering from "./1-misc/metabolism-kate-deering.md";
+import cryptoCurrentNickLand from "./1-misc/crypto-current-nick-land.md";
 
 interface Note {
   title: string;
